@@ -10,7 +10,7 @@ function Page() {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const [isDeatails, setIsDeatails] = useState(false);
 useEffect(()=>{
- if (localStorage.getItem("details") !== undefined) {
+ if (localStorage.getItem("details")) {
   setIsDeatails(true);
  } 
 })

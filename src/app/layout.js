@@ -4,7 +4,6 @@ import Navbar from '@/components/Navbar'
 
 export default function RootLayout({ children }) {
 
-
   
   return (
     <html lang="en">
@@ -13,7 +12,7 @@ export default function RootLayout({ children }) {
         <Header />
         <Navbar />
         <div className='relative'>
-          <div className='p-5 bg-[#000]'></div>
+          {/* <div className='p-5 bg-[#000]'></div> */}
           {children}
         </div>
       </body>

@@ -8,7 +8,8 @@ const Navbar = () => {
   const [isUser, setIsUser] = useState(false);
 
   useEffect(() => {
-    if (localStorage.getItem("username") !== undefined) {
+    console.log(localStorage.getItem("email"));
+    if (localStorage.getItem("email")) {
       setIsUser(true);
     }
   });
