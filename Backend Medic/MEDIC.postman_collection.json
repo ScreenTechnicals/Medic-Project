@@ -1,0 +1,325 @@
+{
+	"info": {
+		"_postman_id": "8fcf64a8-e8e4-4883-9aaa-71482f2283f1",
+		"name": "MEDIC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20757504"
+	},
+	"item": [
+		{
+			"name": "All users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/users/P: Anshuman Panda",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"users",
+						"P: Anshuman Panda"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Unique Patient List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/Dr Sbhranshu Sekhar Choudhury/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"Dr Sbhranshu Sekhar Choudhury",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Doctors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/doctors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register First",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "P: Anshuman Panda",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"register"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Second",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "P: Anshuman Panda",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Anshuman",
+							"type": "text"
+						},
+						{
+							"key": "isdoctor",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "experience",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "specialist",
+							"value": "none",
+							"type": "text"
+						},
+						{
+							"key": "medication",
+							"value": "vitamin b complex",
+							"type": "text"
+						},
+						{
+							"key": "mail",
+							"value": "anshumanpanda710@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "8975654343",
+							"type": "text"
+						},
+						{
+							"key": "symptom",
+							"value": "Headach",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/register-details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"register-details"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "message",
+							"value": "I have headach.",
+							"type": "text"
+						},
+						{
+							"key": "sender",
+							"value": "P: Anurag",
+							"type": "text"
+						},
+						{
+							"key": "doctor_name",
+							"value": "Dr Sbhranshu Sekhar Choudhury",
+							"type": "text"
+						},
+						{
+							"key": "isdoctor",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "timestamp",
+							"value": "7:00 PM",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/user-chat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user-chat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Schedule Meet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "receiver_mail",
+							"value": "screentechnicals@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "sender_name",
+							"value": "Anshuman Panda",
+							"type": "text"
+						},
+						{
+							"key": "meet_url",
+							"value": "xyz.com",
+							"type": "text"
+						},
+						{
+							"key": "schedule",
+							"value": "today 09.10 Pm",
+							"type": "text"
+						},
+						{
+							"key": "sender_mail",
+							"value": "anshumanpanda710@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "sender_phone",
+							"value": "7865676474",
+							"type": "text"
+						},
+						{
+							"key": "receiver_name",
+							"value": "Dr Chinmaya",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/schedule-meeting",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"schedule-meeting"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
