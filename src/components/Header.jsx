@@ -10,7 +10,7 @@ const Header = () => {
         <div className='flex md:text-sm text-[10px] items-center space-x-5'>
             <div className='flex items-center space-x-1'>
                 <MdLocationOn className='text-[#00fbff]'/>
-                <span>Triumph, Los Angeles, California, US</span>
+                <span>Iter, Bhubneshwar, Odisha, IN</span>
             </div>
             <div className='flex items-center space-x-1'>
                 <BiTimeFive className='text-[#00fbff]'/>
@@ -34,7 +34,7 @@ const Header = () => {
             </div>
             <div>
                 <Link href={"/"}>
-                    <button className='px-5 uppercase text-sm py-5 bg-[#004aba] text-[#fff] tracking-widest font-semibold hover:bg-[#1f2f65] transition-all'>get a appointment</button>
+                    <button className='px-5 uppercase text-sm py-5 bg-[#004aba] text-[#fff] tracking-widest font-semibold hover:bg-[#1f2f65] transition-all'>get an appointment</button>
                 </Link>
             </div>
         </div>

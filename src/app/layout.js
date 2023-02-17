@@ -1,9 +1,10 @@
+import Header from '@/components/Header'
 import './globals.css'
-import Header from '../components/Header'
-import Navbar from '../components/Navbar'
-
+import Navbar from '@/components/Navbar'
 
 export default function RootLayout({ children }) {
+
+
   
   return (
     <html lang="en">
@@ -11,7 +12,8 @@ export default function RootLayout({ children }) {
       <body className='overflow-x-hidden selection:bg-[#142a849f] selection:text-white'>
         <Header />
         <Navbar />
-        <div>
+        <div className='relative'>
+          <div className='p-5 bg-[#000]'></div>
           {children}
         </div>
       </body>
